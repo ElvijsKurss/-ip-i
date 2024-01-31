@@ -1,0 +1,26 @@
+.helper-one {
+  font-family: PhantomBlack;
+  font-size: 45px;
+  color: #ea7527;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  position: relative;
+  background-image: url(assets/img/burtu-fons.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 4rem;
+
+  &::after {
+    content: "";
+    background: #ea7527;
+    display: block;
+    border-radius: 3px;
+    height: 6px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}

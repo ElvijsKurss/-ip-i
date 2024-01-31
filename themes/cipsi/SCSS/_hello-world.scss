@@ -1,0 +1,15 @@
+#test-id-two {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+
+  a {
+    display: block;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}

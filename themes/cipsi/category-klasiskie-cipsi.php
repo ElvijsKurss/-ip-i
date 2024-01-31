@@ -5,53 +5,43 @@ get_header();
 ?>
 
 <main>
-	<ul>
-		<?php
+	<div id="klasiskie-container">
+		<h1 class="helper-one">Klasiskie čipši</h1>
+		<ul>
+			<div class="element-container">
+				<?php
+				$args = array(
+					'post_type'        => 'produkts',
+					'category_name'    => 'klasiskie-cipsi',
+				);
 
-		$args = array(
-			'post_type'        => 'produkts',
-			'category_name'    => 'klasiskie-cipsi',
-		);
+				$query = new WP_Query($args);
 
-		$query = new WP_Query($args);
-
-		$posts = $query->get_posts();
-		?>
-		<div id="photoGrid">
-			<?php
-			foreach ($posts as $post) {
-				$title = $post->post_title;
-				$content = $post->post_content;
-				$imageThumbnailSrc = get_the_post_thumbnail_url($post, 'Small boy size');
-				$imageLargeSrc = get_the_post_thumbnail_url($post, 'medium');
-				$categories = get_the_category($post);
-				$categoryNames = array();
-
-				if ($categories) {
-					foreach ($categories as $category) {
-						$categoryNames[] = $category->name;
+				$posts = $query->get_posts();
+				?>
+				<div id="photoGrid">
+					<?php
+					foreach ($posts as $post) {
+						$title = $post->post_title;
+						$content = $post->post_content;
+						$imageThumbnailSrc = get_the_post_thumbnail_url($post, 'Small boy size');
+						$imageLargeSrc = get_the_post_thumbnail_url($post, 'medium');
+						$customCategory = "Kartupeļu čipši";
+						$postLink = get_permalink($post);
+					?>
+						<a href="<?= $postLink ?>" class="post-item">
+							<span class="choose-span">Izvēlēties</span>
+							<span class="post-title"><?= $title ?></span>
+							<span class="post-categories"><?= $customCategory ?></span>
+							<img src="<?= $imageLargeSrc ?>" alt="<?= $title ?>" class="post-image" />
+						</a>
+					<?php
 					}
-
-					$categoryList = implode(', ', $categoryNames);
-				} else {
-					$categoryList = 'No category';
-				}
-
-				$postLink = get_permalink($post);
-			?>
-				<li class="post-item">
-					<a href="<?= $postLink ?>" class="post-title"><?= $title ?></a>
-					<span class="post-categories"><?= $categoryList ?></span>
-					<img src="<?= $imageLargeSrc ?>" alt="<?= $title ?>" class="post-image" />
-				</li>
-			<?php
-			}
-			?>
-		</div>
-
-
-	</ul>
-
+					?>
+				</div>
+			</div>
+		</ul>
+	</div>
 </main>
 
 <?php
