@@ -20,57 +20,103 @@ html {
 }
 
 body {
-  background-color: beige;
-  width: 100%;
-  display: flex;
+  min-height: 100%;
   height: 100%;
+  background-color: #f8f4eb;
+  font-family: Panton-Bold;
+  font-size: 16px;
+}
+
+.footer {
+  background: #ea7527;
+  position: relative;
+  min-height: 650px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.fa {
+  font-weight: 400;
+  font-size: 36px;
+  color: black;
+}
+
+#bottom-footer {
+  background: #111822;
+  color: #fff;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+#top-footer {
+  display: flex;
+  border: 1px solid red;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
   flex-direction: column;
 }
-
-footer {
-  width: 100%;
-  background-color: black;
-  height: 5em;
+#top-footer #logo-container {
+  height: 110px;
   display: flex;
-  justify-content: center;
+  border: 1px solid green;
+  width: 1080px;
+}
+#top-footer .row {
+  display: flex;
+  border: 1px solid blue;
   align-items: center;
-}
-footer #info {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer #info .icons {
-  padding: 0.4em 1em;
-}
-footer #info a {
-  text-decoration: none;
-}
-footer #info .fa {
-  color: white;
-  font-size: 1.5em;
-  display: flex;
 }
 
-#navigation-bar {
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#footer-teksts {
+  font-size: 16px;
+  font-family: PhantomBlack;
+  margin: 0;
 }
-#navigation-bar #top-logo {
+
+#page-wallpaper .wp-block-quote {
+  border: 5px solid black;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  position: sticky;
+  background: #ea7527;
+}
+.header #navigation-bar {
   display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
   justify-content: center;
   align-items: center;
-  margin-left: 3em;
+  position: sticky;
 }
-#navigation-bar .menu {
+.header #navigation-bar img {
+  height: 90px;
+}
+.header #navigation-bar .wrapper {
   display: flex;
-  margin: 1em 0.5em;
 }
-#navigation-bar .menu ul {
+.header #navigation-bar .wrapper .logo {
+  height: 110px;
+  position: relative;
+  padding-right: 20px;
+}
+.header #navigation-bar .menu {
+  display: flex;
+}
+.header #navigation-bar .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -79,43 +125,79 @@ footer #info .fa {
   flex-direction: row;
   align-items: center;
 }
-#navigation-bar .menu ul li {
-  margin-right: 10px;
+.header #navigation-bar .menu ul li {
+  line-height: 36px;
+  padding: 20px 0;
+  flex-direction: row;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: PhantomBlack;
+}
+.header #navigation-bar .menu ul li a {
+  text-decoration: none;
+  color: white;
   display: flex;
   flex-direction: row;
+  padding-right: 30px;
 }
-#navigation-bar .menu ul li a {
-  color: white;
+.header #navigation-bar .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+@font-face {
+  font-family: PhantomItalicBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
+}
+@font-face {
+  font-family: PhantomBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
+}
+@font-face {
+  font-family: PhantomLight;
+  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
+}
+@font-face {
+  font-family: PhantomItalicLight;
+  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
+}
+#photoGrid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.post-item {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  align-items: center;
+}
+.post-item .post-title {
   text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+.post-item .post-categories {
+  color: black;
+  text-align: center;
+}
+.post-item .post-image {
+  max-width: 200px;
+  height: auto;
+  text-align: center;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-main h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 0;
-}
-main p {
-  margin: 1em 3em;
-}
-
-#main-content {
-  flex: 1;
-}
-
-.wp-block-image {
+.customize-suiipport body {
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.wp-block-image .wp-image-37 {
-  border: 1px solid white;
-}
-
-#page-wallpaper .wp-block-quote {
-  border: 5px solid black;
+  min-height: 100vh;
 }/*# sourceMappingURL=style.css.map */

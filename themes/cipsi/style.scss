@@ -20,11 +20,11 @@ html {
   padding-top: 32px;
 }
 body {
-  background-color: beige;
-  width: 100%;
-  display: flex;
+  min-height: 100%;
   height: 100%;
-  flex-direction: column;
+  background-color: #f8f4eb;
+  font-family: Panton-Bold;
+  font-size: 16px;
 }
 
 // Imported scss
@@ -32,3 +32,6 @@ body {
 @import "SCSS/navbar";
 @import "SCSS/main";
 @import "SCSS/wallpaper";
+@import "SCSS/header";
+@import "fonti/fonti";
+@import "SCSS/klasiskie-cipsi";

@@ -4,7 +4,7 @@
 get_header();
 ?>
 
-<main> klasisko čipšu template
+<main>
 	<ul>
 		<?php
 
@@ -24,17 +24,32 @@ get_header();
 				$content = $post->post_content;
 				$imageThumbnailSrc = get_the_post_thumbnail_url($post, 'Small boy size');
 				$imageLargeSrc = get_the_post_thumbnail_url($post, 'medium');
+				$categories = get_the_category($post);
+				$categoryNames = array();
+
+				if ($categories) {
+					foreach ($categories as $category) {
+						$categoryNames[] = $category->name;
+					}
+
+					$categoryList = implode(', ', $categoryNames);
+				} else {
+					$categoryList = 'No category';
+				}
 
 				$postLink = get_permalink($post);
 			?>
-				<li>
-					<a href="<?= $postLink ?>"><?= $title ?></a>
-					<img src="<?= $imageLargeSrc ?>" />
+				<li class="post-item">
+					<a href="<?= $postLink ?>" class="post-title"><?= $title ?></a>
+					<span class="post-categories"><?= $categoryList ?></span>
+					<img src="<?= $imageLargeSrc ?>" alt="<?= $title ?>" class="post-image" />
 				</li>
 			<?php
 			}
 			?>
 		</div>
+
+
 	</ul>
 
 </main>

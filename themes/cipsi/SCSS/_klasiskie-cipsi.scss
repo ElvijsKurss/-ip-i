@@ -1,0 +1,43 @@
+#photoGrid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.post-item {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  align-items: center;
+  .post-title {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .post-categories {
+    color: black;
+    text-align: center;
+  }
+
+  .post-image {
+    max-width: 200px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+.customize-suiipport {
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+}

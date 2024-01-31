@@ -10,11 +10,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav id="navigation-bar">
-            <div id="top-logo">LOGO</div>
-
             <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
+            <div class="wrapper">
+                <div class="logo">
+                    <a href="http://test-cipsi.test/">
+                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/logo.png" />
+                    </a>
+                </div>
+            </div>
         </nav>
     </header>
     <div id="main-content">
