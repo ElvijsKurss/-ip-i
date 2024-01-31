@@ -1,0 +1,40 @@
+#navigation-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  #top-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3em;
+  }
+
+  .menu {
+    display: flex;
+    margin: 1em 0.5em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+
+      li {
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

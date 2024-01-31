@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*
+Theme Name: Čipši
+Theme URI: https://prelude.design/
+Description: www.cipsi.lv kopija
+Author: Elvijs Kurss
+Version: 1.0.0
+*/
+/* Add your custom styles here */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  margin: 0 !important;
+  box-sizing: border-box;
+  padding-top: 32px;
+}
+
+body {
+  background-color: beige;
+  width: 100%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  height: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #info .icons {
+  padding: 0.4em 1em;
+}
+footer #info a {
+  text-decoration: none;
+}
+footer #info .fa {
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+}
+
+#navigation-bar {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#navigation-bar #top-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3em;
+}
+#navigation-bar .menu {
+  display: flex;
+  margin: 1em 0.5em;
+}
+#navigation-bar .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+#navigation-bar .menu ul li {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
+}
+#navigation-bar .menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em 0;
+}
+main p {
+  margin: 1em 3em;
+}
+
+#main-content {
+  flex: 1;
+}
+
+.wp-block-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-image .wp-image-37 {
+  border: 1px solid white;
+}
+
+#page-wallpaper .wp-block-quote {
+  border: 5px solid black;
+}/*# sourceMappingURL=style.css.map */
