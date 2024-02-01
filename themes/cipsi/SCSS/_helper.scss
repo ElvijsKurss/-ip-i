@@ -8,6 +8,7 @@
   padding-top: 0;
   position: relative;
   background-image: url(assets/img/burtu-fons.jpg);
+  background-position: 0 30%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 4rem;
@@ -23,4 +24,15 @@
     bottom: 0;
     left: 0;
   }
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  min-width: 375px;
+  max-width: 1200px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }

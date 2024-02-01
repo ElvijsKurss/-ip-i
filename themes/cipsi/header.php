@@ -11,16 +11,18 @@
 
 <body>
     <header class="header">
-        <nav id="navigation-bar">
-            <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="http://test-cipsi.test/">
-                        <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/logo.png" />
-                    </a>
+        <div class="content-wrapper">
+            <nav id="navigation-bar" class="content-wrapper">
+                <?php wp_nav_menu(['theme_location' => 'header-menu']); ?>
+                <div class="menu-logo">
+                    <div class="logo">
+                        <a href="http://test-cipsi.test/">
+                            <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/logo.png" />
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
     <div id="main-content">
         <main id="page-<?= isset($post) ? $post->post_name : "unknown" ?>">

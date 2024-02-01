@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <main>
-    <div id="klasiskie-container">
+    <div id="klasiskie-container" class="content-wrapper">
         <h1 class="helper-one">Kraukšķi</h1>
         <ul>
             <div class="element-container">
@@ -30,9 +30,11 @@ get_header();
                         $postLink = get_permalink($post);
                     ?>
                         <a href="<?= $postLink ?>" class="post-item">
-                            <span class="choose-span">Izvēlēties</span>
-                            <span class="post-title"><?= $title ?></span>
-                            <span class="post-categories"><?= $customCategory ?></span>
+                            <span class="choose-span">Izvēlies</span>
+                            <div class="text-container">
+                                <span class="post-title"><?= $title ?></span>
+                                <span class="post-categories"><?= $customCategory ?></span>
+                            </div>
                             <img src="<?= $imageLargeSrc ?>" alt="<?= $title ?>" class="post-image" />
                         </a>
                     <?php

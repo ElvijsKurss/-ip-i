@@ -7,22 +7,20 @@
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     position: sticky;
-    img {
-      height: 90px;
-    }
-    .wrapper {
-      display: flex;
-      .logo {
-        height: 110px;
-        position: relative;
-        padding-right: 20px;
+    .logo {
+      height: 110px;
+      position: relative;
+      padding-right: 50px;
+      img {
+        height: 90px;
       }
     }
     .menu {
       display: flex;
+      justify-content: space-between;
       ul {
         list-style: none;
         padding: 0;
