@@ -24,5 +24,6 @@
             </nav>
         </div>
     </header>
+    
     <div id="main-content">
         <main id="page-<?= isset($post) ? $post->post_name : "unknown" ?>">

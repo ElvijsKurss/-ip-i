@@ -28,30 +28,30 @@
 </div>
 <footer>
     <div class="footer">
-        <div class="container">
+        <div class="container content-wrapper">
             <div id="top-footer">
                 <div id="logo-container">
                     <div class="column">
                         <div class="logo-footer">
-                            <a href="#">
-                                <!-- <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/logo.png" /> -->
+                            <a href="cipsi.lv">
+                                <img src="<?= get_stylesheet_directory_uri() ?>/assets/img/footer-logo.svg" />
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="column one">
+                    <div class="one">
                         <div class="soc-footer">
                             <a href="#"><i class="fa fa-facebook-square"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-youtube"></i></a>
+                            <a href="#"><i class="fa fa-linkedin-square"></i></a>
                         </div>
                         <p>Jaunkūlu 2, Ādaži, Ādažu novads,<br />
                             Latvija, LV 2164<br />
                             E-pasts:  orkla@orkla.lv</p>
-                        <a class="kontakti">Visi kontakti</a>
                     </div>
-                    <div class="column  two">
+                    <div class="two">
                         <p><strong>ATSAUKSMĒM<br />
                             </strong>Tālrunis: (+371) 80001064</p>
                         <p><strong>EKSKURSIJĀM</strong><br />
@@ -61,7 +61,7 @@
                             </strong>Tālrunis: (+371) 67080390;<br />
                             Fakss: (+371) 67080391</p>
                     </div>
-                    <div class="column three">
+                    <div class="three">
                         <p><strong>EKSPORTA DAĻA<br />
                             </strong>Tālrunis: (+371) 67080314;<br />
                             Fakss (+371) 67334631</p>
@@ -71,7 +71,7 @@
                             </strong>Tālrunis: (+371) 27023099<br />
                             E-pasts:  procurement@orkla.lv</p>
                     </div>
-                    <div class="column four">
+                    <div class="four">
                         <p><strong>MĀRKETINGA DAĻA<br />
                             </strong>E-pasts: cipsi@orkla.lv</p>
                     </div>
@@ -83,7 +83,7 @@
                 <div class="row">
                     <div class="column">
                         <p id="footer-teksts">Orkla Latvija, 2024 </p>
-                        </div>
+                    </div>
                 </div>
             </div>
         </div>

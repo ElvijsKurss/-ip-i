@@ -3,6 +3,8 @@
   width: 100%;
   position: sticky;
   background: #ea7527;
+  top: 0;
+  z-index: 999;
   #navigation-bar {
     display: flex;
     flex-direction: row-reverse;
@@ -10,6 +12,7 @@
     justify-content: left;
     align-items: center;
     position: sticky;
+    top: 0;
     .logo {
       height: 110px;
       position: relative;

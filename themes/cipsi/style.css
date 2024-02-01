@@ -36,12 +36,12 @@ body {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  line-height: 1.5;
+  font-family: PhantomLight;
+  font-weight: bolder;
 }
-
-.fa {
-  font-weight: 400;
-  font-size: 36px;
-  color: black;
+p strong {
+  font-family: PhantomBlack;
 }
 
 #bottom-footer {
@@ -60,7 +60,6 @@ p {
 
 #top-footer {
   display: flex;
-  border: 1px solid red;
   align-items: center;
   justify-content: center;
   padding-top: 60px;
@@ -70,12 +69,30 @@ p {
   height: 110px;
   display: flex;
   border: 1px solid green;
-  width: auto;
+  width: 100%;
 }
 #top-footer .row {
   display: flex;
-  border: 1px solid blue;
-  align-items: center;
+  justify-content: center;
+}
+#top-footer .row .one,
+#top-footer .row .two,
+#top-footer .row .three,
+#top-footer .row .four {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+#top-footer .row .four {
+  display: flex;
+  align-self: flex-start;
+}
+
+.soc-footer {
+  padding: 15px 0;
+  margin-top: 20px;
+  display: flex;
 }
 
 #footer-teksts {
@@ -84,11 +101,26 @@ p {
   margin: 0;
 }
 
+.logo-footer {
+  height: 100px;
+  width: auto;
+  z-index: 99;
+}
+
+.fa {
+  font-weight: 400;
+  font-size: 36px !important;
+  color: black !important;
+  margin-right: 20px;
+}
+
 .header {
   display: block;
   width: 100%;
   position: sticky;
   background: #ea7527;
+  top: 0;
+  z-index: 999;
 }
 .header #navigation-bar {
   display: flex;
@@ -97,6 +129,7 @@ p {
   justify-content: left;
   align-items: center;
   position: sticky;
+  top: 0;
 }
 .header #navigation-bar .logo {
   height: 110px;
@@ -214,7 +247,6 @@ p {
   font-size: 20px;
   text-transform: uppercase;
   font-family: PhantomBlack;
-  transition: background 0.2s ease, color 0.2s ease;
 }
 #klasiskie-container .post-item .choose-span:hover {
   background: #f4c00c;

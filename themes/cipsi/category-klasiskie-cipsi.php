@@ -5,7 +5,7 @@ get_header();
 ?>
 
 <main>
-	<div id="klasiskie-container">
+	<div id="klasiskie-container" class="content-wrapper">
 		<h1 class="helper-one">Klasiskie čipši</h1>
 		<ul>
 			<div class="element-container">
