@@ -140,22 +140,6 @@ p {
   text-decoration: underline;
 }
 
-@font-face {
-  font-family: PhantomItalicBlack;
-  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
-}
-@font-face {
-  font-family: PhantomBlack;
-  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
-}
-@font-face {
-  font-family: PhantomLight;
-  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
-}
-@font-face {
-  font-family: PhantomItalicLight;
-  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
-}
 #klasiskie-container {
   width: 100%;
   padding: 75px 0 175px 0;
@@ -306,4 +290,24 @@ p {
   width: 100%;
   height: auto;
   display: block;
+}
+
+@font-face {
+  font-family: PhantomItalicBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
+}
+@font-face {
+  font-family: PhantomBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
+}
+@font-face {
+  font-family: PhantomLight;
+  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
+}
+@font-face {
+  font-family: PhantomItalicLight;
+  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
+}
+#page-ego-siers-un-krejums {
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
