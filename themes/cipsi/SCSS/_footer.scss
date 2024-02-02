@@ -4,17 +4,6 @@
   min-height: 650px;
 }
 
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.5;
-  font-family: PhantomLight;
-  font-weight: bolder;
-  strong {
-    font-family: PhantomBlack;
-  }
-}
-
 #bottom-footer {
   background: #111822;
   color: #fff;
@@ -55,6 +44,15 @@ p {
       width: 100%;
       padding-right: 15px;
       padding-left: 15px;
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+        font-weight: bolder;
+        strong {
+          font-family: PhantomBlack;
+        }
+      }
     }
 
     .four {

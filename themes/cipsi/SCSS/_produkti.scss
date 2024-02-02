@@ -1,6 +1,77 @@
-#page-produkti {
+#page-produkti-content {
   width: 100%;
-  padding: 75px 0 175px 0;
+  padding: 75px 0 75px 0;
   margin-right: auto;
   margin-left: auto;
+  #products-container {
+    display: flex;
+    .post-item {
+      list-style: none;
+      margin-bottom: 60px;
+      padding-bottom: 50px;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      flex: 0 0 calc(33.333333% - 20px);
+      max-width: calc(33.333333% - 20px);
+      box-sizing: border-box;
+      text-decoration: none;
+      transition: border 0.2s ease;
+      border-radius: 10px 10px 10px 0;
+      border: 1px solid transparent;
+      position: relative;
+      &:hover {
+        border: 1px solid #ea7527;
+      }
+
+      .choose-span {
+        background: #f4c00c;
+        color: white;
+        &:hover {
+          background: #f4c00c;
+          color: white;
+        }
+      }
+      .category-link {
+        text-decoration: none;
+        .product-text-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .choose-span {
+            border: 2px solid #ea7527;
+            border-radius: 10px 10px 10px 0;
+            background-color: transparent;
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            padding: 10px 45px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: PhantomBlack;
+            color: #ea7527;
+          }
+          .category-title {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: PhantomBlack;
+            color: #ea7527;
+            text-transform: uppercase;
+            padding-bottom: 1rem;
+          }
+        }
+        .category-image {
+          max-width: 400px;
+          height: auto;
+          text-align: center;
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
 }
