@@ -11,3 +11,6 @@ $imageSrc = get_the_post_thumbnail_url($post, 'medium');
 </div>
 
 <img src="<?= $imageSrc ?>" />
+
+<!-- Šo izdzēšot nekas nemainās, why -->
+

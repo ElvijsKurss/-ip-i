@@ -180,7 +180,7 @@ body {
 
 #klasiskie-container {
   width: 100%;
-  padding: 75px 0 175px 0;
+  padding: 75px 0 75px 0;
   margin-right: auto;
   margin-left: auto;
 }
@@ -270,6 +270,81 @@ body {
   min-height: 100vh;
 }
 
+.helper-one {
+  font-family: PhantomBlack;
+  font-size: 45px;
+  color: #ea7527;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  padding-top: 0;
+  position: relative;
+  background-image: url(assets/img/burtu-fons.jpg);
+  background-position: 0 30%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-left: 4rem;
+}
+.helper-one::after {
+  content: "";
+  background: #ea7527;
+  display: block;
+  border-radius: 3px;
+  height: 6px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  min-width: 375px;
+  max-width: 1200px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@font-face {
+  font-family: PhantomItalicBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
+}
+@font-face {
+  font-family: PhantomBlack;
+  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
+}
+@font-face {
+  font-family: PhantomLight;
+  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
+}
+@font-face {
+  font-family: PhantomItalicLight;
+  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
+}
+#page-ego-siers-un-krejums {
+  background-color: black;
+}
+
+#page-jaunumi {
+  width: 100%;
+  height: 25rem;
+  width: 100%;
+  padding: 75px 0 75px 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#page-par-mums {
+  width: 100%;
+  padding: 75px 0 75px 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 25rem;
+}
+
 #page-produkti-content {
   width: 100%;
   padding: 75px 0 75px 0;
@@ -347,74 +422,19 @@ body {
   padding-bottom: 2rem;
 }
 
-.helper-one {
-  font-family: PhantomBlack;
-  font-size: 45px;
-  color: #ea7527;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
-  padding-top: 0;
-  position: relative;
-  background-image: url(assets/img/burtu-fons.jpg);
-  background-position: 0 30%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-left: 4rem;
-}
-.helper-one::after {
-  content: "";
-  background: #ea7527;
-  display: block;
-  border-radius: 3px;
-  height: 6px;
-  width: 60px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
-.content-wrapper {
-  box-sizing: border-box;
-  min-width: 375px;
-  max-width: 1200px;
+#page-ilgtspeja {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  height: 25rem;
+  width: 100%;
+  padding: 75px 0 75px 0;
   margin-right: auto;
   margin-left: auto;
 }
 
-#test-id-two {
+#page-uzturklase {
   width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-}
-#test-id-two a {
-  display: block;
-}
-#test-id-two a img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-@font-face {
-  font-family: PhantomItalicBlack;
-  src: url(fonti/AnyConv.com__Panton-BlackitalicCaps.ttf);
-}
-@font-face {
-  font-family: PhantomBlack;
-  src: url(fonti/AnyConv.com__Panton-BlackCaps.ttf);
-}
-@font-face {
-  font-family: PhantomLight;
-  src: url(fonti/AnyConv.com__Panton-LightCaps.ttf);
-}
-@font-face {
-  font-family: PhantomItalicLight;
-  src: url(fonti/AnyConv.com__Panton-LightItalicCaps.ttf);
-}
-#page-ego-siers-un-krejums {
-  background-color: black;
+  padding: 75px 0 75px 0;
+  margin-right: auto;
+  margin-left: auto;
+  height: 25rem;
 }/*# sourceMappingURL=style.css.map */
