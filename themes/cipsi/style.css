@@ -283,7 +283,6 @@ body {
   background-position: 0 30%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-left: 4rem;
 }
 .helper-one::after {
   content: "";
@@ -306,6 +305,21 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+#main-page-img {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  display: block;
+}
+#main-page-img a {
+  display: block;
+}
+#main-page-img a img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 @font-face {

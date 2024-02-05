@@ -33,7 +33,7 @@ body {
 @import "SCSS/header";
 @import "SCSS/klasiskie-cipsi";
 @import "SCSS/helper";
-// @import "SCSS/hello-world";
+@import "SCSS/hello-world";
 @import "SCSS/breakpoints";
 
 // Fonti
@@ -41,8 +41,6 @@ body {
 
 //Čipši pages scss
 @import "prece/ego-siers-un-krejums";
-
-
 
 // Galveno kategoriju scss
 @import "SCSS/jaunumi";
