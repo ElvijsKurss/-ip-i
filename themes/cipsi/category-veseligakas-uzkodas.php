@@ -6,13 +6,13 @@ get_header();
 
 <main>
     <div id="klasiskie-container" class="content-wrapper">
-        <h1 class="helper-one">Dipi</h1>
+        <h1 class="helper-one">Veseligākas uzkodas</h1>
         <ul>
             <div class="element-container">
                 <?php
                 $args = array(
                     'post_type'        => 'produkts',
-                    'category_name'    => 'dipi',
+                    'category_name'    => 'veseligakas-uzkodas',
                 );
 
                 $query = new WP_Query($args);
@@ -26,7 +26,7 @@ get_header();
                         $content = $post->post_content;
                         $imageThumbnailSrc = get_the_post_thumbnail_url($post, 'Small boy size');
                         $imageLargeSrc = get_the_post_thumbnail_url($post, 'medium');
-                        $customCategory = "Dipi";
+                        $customCategory = "Veselīgākas uzkodas";
                         $postLink = get_permalink($post);
                     ?>
                         <a href="<?= $postLink ?>" class="post-item">

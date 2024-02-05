@@ -26,7 +26,7 @@ get_header();
 						$content = $post->post_content;
 						$imageThumbnailSrc = get_the_post_thumbnail_url($post, 'Small boy size');
 						$imageLargeSrc = get_the_post_thumbnail_url($post, 'medium');
-						$customCategory = "Kartupeļu čipši";
+						$customCategory = "KLasiskie čipši";
 						$postLink = get_permalink($post);
 					?>
 						<a href="<?= $postLink ?>" class="post-item">

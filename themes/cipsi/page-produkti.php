@@ -3,7 +3,7 @@ get_header();
 ?>
 <div class="content-wrapper">
     <div id="page-produkti-content">
-    <h1 class="helper-one">Produkti</h1>
+        <h1 class="helper-one">Produkti</h1>
         <div id="products-container">
             <?php
             $args = array(

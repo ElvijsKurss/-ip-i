@@ -1,13 +1,18 @@
 <?php
 $title = $post->post_title;
 $content = $post->post_content;
-$imageSrc = get_the_post_thumbnail_url($post, 'medium');
+$imageSrc = get_the_post_thumbnail_url($post, 'large');
 ?>
+<div class="product-holder content-wrapper">
+    <div class="product-image-holder"><img src="<?= $imageSrc ?>" /></div>
 
-<h1><?= $title ?></h1>
 
-<div>
-    <?= $content ?>
+    <div class="product-text-holder">
+        <h1 class="helper-two"><?= $title ?></h1>
+        <?= $content ?>
+        <div class="pirkt-span-container">
+            <span class="pirkt-span">Pirkt</span>
+
+        </div>
+    </div>
 </div>
-
-<img src="<?= $imageSrc ?>" />

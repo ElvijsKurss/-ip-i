@@ -49,3 +49,31 @@
 //     text-decoration: none;
 //   }
 // }
+
+.helper-two {
+  font-family: PhantomBlack;
+  font-size: 45px;
+  color: #ea7527;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  position: relative;
+  background-image: url(assets/img/burtu-fons.jpg);
+  background-position: 0 30%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+
+  &::after {
+    content: "";
+    background: #ea7527;
+    display: block;
+    border-radius: 3px;
+    height: 6px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+}
