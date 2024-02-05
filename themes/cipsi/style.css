@@ -189,16 +189,16 @@ body {
 }
 #klasiskie-container #photoGrid {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
 }
 #klasiskie-container .post-item {
   list-style: none;
-  margin-bottom: 60px;
+  margin: 0px 10px 60px 10px;
   padding-bottom: 50px;
-  padding: 15px;
+  padding: 10px;
   display: flex;
   flex-direction: column-reverse;
   text-align: center;
@@ -211,6 +211,7 @@ body {
   border-radius: 10px 10px 10px 0;
   border: 1px solid transparent;
   position: relative;
+  transition: 0.1s;
 }
 #klasiskie-container .post-item:hover {
   border: 1px solid #ea7527;
@@ -252,6 +253,7 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   font-family: PhantomBlack;
+  transition: 0.1s;
 }
 #klasiskie-container .post-item .choose-span:hover {
   background: #f4c00c;
@@ -367,45 +369,130 @@ body {
 }
 #page-ego-siers-un-krejums,
 #page-karumnieka-izlase,
+#page-medu-grauzdeti-zemesrieksti,
+#page-pikantais-cili-zemesrieksti-apvalka,
+#page-zilais-siers-zemesrieksti-apvalka,
+#page-meksikanu-salsa-zemesrieksti-apvalka,
 #page-dipi-mercite-ar-darzenu-garsu,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu,
 #page-dipi-mercite-ar-darza-zalumu-garsu,
-#page-dipi-mercite-ar-dillu-garsu {
+#page-dipi-mercite-ar-dillu-garsu,
+#page-kraukskigie-kartupeli-ar-sali,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu,
+#page-ar-dillu-garsu-2,
+#page-ar-jogurta-un-sarkano-sipolu-garsu,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku,
+#page-ar-sali,
+#page-pupinu-nujinas-ar-sieru,
+#page-pupinu-rinkisi-ar-darzeniem,
+#page-ar-krejuma-un-sipolu-garsu,
+#page-ar-dillu-garsu,
+#page-ar-tomatu-garsu,
+#page-ego-sipollocini,
+#page-bekons {
   background-color: #ffffff;
   padding-top: 75px;
   padding-bottom: 175px;
 }
 #page-ego-siers-un-krejums .product-holder,
 #page-karumnieka-izlase .product-holder,
+#page-medu-grauzdeti-zemesrieksti .product-holder,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder,
-#page-dipi-mercite-ar-dillu-garsu .product-holder {
+#page-dipi-mercite-ar-dillu-garsu .product-holder,
+#page-kraukskigie-kartupeli-ar-sali .product-holder,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder,
+#page-ar-dillu-garsu-2 .product-holder,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder,
+#page-ar-sali .product-holder,
+#page-pupinu-nujinas-ar-sieru .product-holder,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder,
+#page-ar-krejuma-un-sipolu-garsu .product-holder,
+#page-ar-dillu-garsu .product-holder,
+#page-ar-tomatu-garsu .product-holder,
+#page-ego-sipollocini .product-holder,
+#page-bekons .product-holder {
   display: flex;
 }
 #page-ego-siers-un-krejums .product-holder .product-image-holder,
 #page-karumnieka-izlase .product-holder .product-image-holder,
+#page-medu-grauzdeti-zemesrieksti .product-holder .product-image-holder,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .product-image-holder,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .product-image-holder,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .product-image-holder,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .product-image-holder,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .product-image-holder,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .product-image-holder,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .product-image-holder {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .product-image-holder,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .product-image-holder,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .product-image-holder,
+#page-ar-dillu-garsu-2 .product-holder .product-image-holder,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .product-image-holder,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .product-image-holder,
+#page-ar-sali .product-holder .product-image-holder,
+#page-pupinu-nujinas-ar-sieru .product-holder .product-image-holder,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .product-image-holder,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .product-image-holder,
+#page-ar-dillu-garsu .product-holder .product-image-holder,
+#page-ar-tomatu-garsu .product-holder .product-image-holder,
+#page-ego-sipollocini .product-holder .product-image-holder,
+#page-bekons .product-holder .product-image-holder {
   display: flex;
   padding: 1rem 1rem;
 }
 #page-ego-siers-un-krejums .product-holder .product-image-holder img,
 #page-karumnieka-izlase .product-holder .product-image-holder img,
+#page-medu-grauzdeti-zemesrieksti .product-holder .product-image-holder img,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .product-image-holder img,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .product-image-holder img,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .product-image-holder img,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .product-image-holder img,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .product-image-holder img,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .product-image-holder img,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .product-image-holder img {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .product-image-holder img,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .product-image-holder img,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .product-image-holder img,
+#page-ar-dillu-garsu-2 .product-holder .product-image-holder img,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .product-image-holder img,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .product-image-holder img,
+#page-ar-sali .product-holder .product-image-holder img,
+#page-pupinu-nujinas-ar-sieru .product-holder .product-image-holder img,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .product-image-holder img,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .product-image-holder img,
+#page-ar-dillu-garsu .product-holder .product-image-holder img,
+#page-ar-tomatu-garsu .product-holder .product-image-holder img,
+#page-ego-sipollocini .product-holder .product-image-holder img,
+#page-bekons .product-holder .product-image-holder img {
   width: 450px;
 }
 #page-ego-siers-un-krejums .product-holder .product-text-holder,
 #page-karumnieka-izlase .product-holder .product-text-holder,
+#page-medu-grauzdeti-zemesrieksti .product-holder .product-text-holder,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .product-text-holder,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .product-text-holder,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .product-text-holder,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .product-text-holder,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .product-text-holder,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .product-text-holder,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .product-text-holder {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .product-text-holder,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .product-text-holder,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .product-text-holder,
+#page-ar-dillu-garsu-2 .product-holder .product-text-holder,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .product-text-holder,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .product-text-holder,
+#page-ar-sali .product-holder .product-text-holder,
+#page-pupinu-nujinas-ar-sieru .product-holder .product-text-holder,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .product-text-holder,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .product-text-holder,
+#page-ar-dillu-garsu .product-holder .product-text-holder,
+#page-ar-tomatu-garsu .product-holder .product-text-holder,
+#page-ego-sipollocini .product-holder .product-text-holder,
+#page-bekons .product-holder .product-text-holder {
   display: flex;
   flex-direction: column;
   padding-left: 50px;
@@ -413,10 +500,27 @@ body {
 }
 #page-ego-siers-un-krejums .product-holder .pirkt-span-container,
 #page-karumnieka-izlase .product-holder .pirkt-span-container,
+#page-medu-grauzdeti-zemesrieksti .product-holder .pirkt-span-container,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .pirkt-span-container,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .pirkt-span-container,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .pirkt-span-container,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .pirkt-span-container,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .pirkt-span-container,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .pirkt-span-container,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .pirkt-span-container,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .pirkt-span-container,
+#page-ar-dillu-garsu-2 .product-holder .pirkt-span-container,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .pirkt-span-container,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .pirkt-span-container,
+#page-ar-sali .product-holder .pirkt-span-container,
+#page-pupinu-nujinas-ar-sieru .product-holder .pirkt-span-container,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .pirkt-span-container,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .pirkt-span-container,
+#page-ar-dillu-garsu .product-holder .pirkt-span-container,
+#page-ar-tomatu-garsu .product-holder .pirkt-span-container,
+#page-ego-sipollocini .product-holder .pirkt-span-container,
+#page-bekons .product-holder .pirkt-span-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -424,10 +528,27 @@ body {
 }
 #page-ego-siers-un-krejums .product-holder .pirkt-span-container .pirkt-span,
 #page-karumnieka-izlase .product-holder .pirkt-span-container .pirkt-span,
+#page-medu-grauzdeti-zemesrieksti .product-holder .pirkt-span-container .pirkt-span,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .pirkt-span-container .pirkt-span,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .pirkt-span-container .pirkt-span,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .pirkt-span-container .pirkt-span,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .pirkt-span-container .pirkt-span,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-dillu-garsu-2 .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-sali .product-holder .pirkt-span-container .pirkt-span,
+#page-pupinu-nujinas-ar-sieru .product-holder .pirkt-span-container .pirkt-span,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-ar-tomatu-garsu .product-holder .pirkt-span-container .pirkt-span,
+#page-ego-sipollocini .product-holder .pirkt-span-container .pirkt-span,
+#page-bekons .product-holder .pirkt-span-container .pirkt-span {
   display: inline-block;
   background: #fea30c;
   color: #fff;
@@ -441,10 +562,27 @@ body {
 }
 #page-ego-siers-un-krejums .product-holder .pirkt-span-container .pirkt-span:hover,
 #page-karumnieka-izlase .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-medu-grauzdeti-zemesrieksti .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-pikantais-cili-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-zilais-siers-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-meksikanu-salsa-zemesrieksti-apvalka .product-holder .pirkt-span-container .pirkt-span:hover,
 #page-dipi-mercite-ar-darzenu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
 #page-dipi-mercite-ar-krejuma-sipolu-un-zalo-locinu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
 #page-dipi-mercite-ar-darza-zalumu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
-#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span:hover {
+#page-dipi-mercite-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-kraukskigie-kartupeli-ar-sali .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-kraukskigie-kartupeli-ar-pikanta-tomata-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-dillu-garsu-2 .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-jogurta-un-sarkano-sipolu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-tomatu-balzamiko-etiki-un-griletu-kiploku .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-sali .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-pupinu-nujinas-ar-sieru .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-pupinu-rinkisi-ar-darzeniem .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-krejuma-un-sipolu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-dillu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ar-tomatu-garsu .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-ego-sipollocini .product-holder .pirkt-span-container .pirkt-span:hover,
+#page-bekons .product-holder .pirkt-span-container .pirkt-span:hover {
   text-decoration: underline;
 }
 
